@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>8
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-classes Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        /* 🔹 User Interaction */
+        .btn {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: chartreuse;
+        }opk
+
+        .btn:active {
+            background: darkorchid;
+        }
+
+        input:focus {
+            border: 2px solid green;
+        }
+
+        input:focus-visible {
+            outline: 3px solid rgb(3, 84, 2);
+        }
+
+        div:focus-within {
+            border: 2px dashed red;
+            padding: 5px;
+        }
+
+        /* :target */
+        #target-box {
+            padding: 20px;
+            border: 2px solid gray;
+        }
+
+        #target-box:target {
+            background: yellow;
+        }
+
+        /* 🔹 Structural / Position */
+        ul li:first-child {
+            color: red;
+        }
+
+        ul li:last-child {
+            color: blue;
+        }
+
+        ul li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        ul li:nth-of-type(odd) {
+            background: rgba(101, 9, 101, 0);
+        }
+
+        p:only-child {
+            background: rgb(145, 5, 26);
+        }
+
+        div:empty {
+            border: 2px dotted gray;
+            height: 20px;
+        }
+
+        /* 🔹 Link States */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        /* 🔹 Input / Forms */
+        input:checked+label {
+            color: green;
+            font-weight: bold;
+        }
+
+        input:disabled {
+            background: #ddd;
+        }
+
+        input:required {
+            border: 2px solid red;
+        }
+
+        input:optional {
+            border: 2px dashed gray;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        input:in-range {
+            background: lightgreen;
+        }
+
+        input:out-of-range {
+            background: lightcoral;
+        }
+
+        input:read-only {
+            background: #eee;
+        }
+
+        input:read-write {
+            background: white;
+        }
+
+        input:placeholder-shown {
+            border: 2px dashed orange;
+        }
+
+        /* 🔹 New & Advanced */
+        :is(h1, h2, h3) {
+            color: darkblue;
+        }
+
+        :where(h1, h2) {
+            font-style: italic;
+        }
+
+        div:has(> img) {
+            border: 3px solid green;
+            padding: 5px;
+        }
+
+        p:not(.keep) {
+            color: gray;
+        }
+
+        li:nth-child(odd of .filter) {
+            background: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Pseudo-classes Playground</h1>
+
+    <section>
+        <h2>User Interaction</h2>
+        <button class="btn">Hover & Click Me</button>
+        <div>
+            <input type="text" placeholder="Focus me">
+        </div>
+        <a href="#target-box">Go to Target</a>
+        <div id="target-box">I become yellow when targeted!</div>
+    </section>
+
+    <section>
+        <h2>Structural / Position</h2>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ul>
+        <div>
+            <p>I'm the only child → pink background</p>
+        </div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Link States</h2>
+        <a href="https://example.com" target="_blank">Unvisited Link</a><br>
+        <a href="https://google.com" target="_blank">Visited Link (after click)</a>
+    </section>
+
+    <section>
+        <h2>Input / Forms</h2>
+        <input type="checkbox" id="chk1"><label for="chk1">Check me</label><br>
+        <input type="text" disabled value="Disabled"><br>
+        <input type="text" required placeholder="Required"><br>
+        <input type="email" placeholder="Enter email"><br>
+        <input type="number" min="1" max="10" value="5"><br>
+        <input type="number" min="1" max="10" value="20"><br>
+        <input type="text" value="Read only" readonly><br>
+        <input type="text" placeholder="I show dashed orange">
+    </section>
+
+    <section>
+        <h2>New & Advanced</h2>
+        <h2>Styled by :is and :where</h2>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="placeholder">
+        </div>
+        <p class="keep">I am kept normal (:not excluded)</p>
+        <p>I turn gray (because I'm not .keep)</p>
+        <ul>
+            <li class="filter">Odd 1</li>
+            <li class="filter">Even 2</li>
+            <li class="filter">Odd 3</li>
+            <li class="filter">Even 4</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
