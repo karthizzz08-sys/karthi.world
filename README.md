@@ -1,2 +1,0 @@
-# karthi.world
-perfume
