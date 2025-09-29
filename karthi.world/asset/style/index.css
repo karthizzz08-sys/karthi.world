@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.child{
+    padding-top: 120px;
+    padding-left: 80px;
+    font-size: 70px;
+    color: red;
+}
+.child1{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+.child2{
+    padding-top:20px;
+    padding-left: 80px;
+    color: red;
+}
+.child3{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.child4{
+    padding-left:80px;
+    padding-top: 20px;
+    color: red;
+}
+.child5{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.child6{
+    padding-left: 80px;
+    padding-top: 20px;
+    color: red;
+}
+.ci{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    font-size: 350px;
+
+}

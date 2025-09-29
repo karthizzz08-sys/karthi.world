@@ -1,0 +1,146 @@
+.body {
+    background-image: url(../image/new4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parent {
+    display: inline-block;
+    color:RED;
+    padding-left: 50px;
+}
+
+.line {
+    display: inline-block;
+    padding-left: 150px;
+    color: red;
+}
+
+.child {
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    padding-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.child:hover{
+    color:grey;
+}
+.child:active{
+    color:bisque;
+}
+
+.line2 {
+    display: inline-block;
+    padding-left: 110px;
+    color: white;
+}
+
+.input {
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.but {
+    background-color:red;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+}
+
+.line3 {
+    padding-left: 50px;
+    color: white;
+}
+
+.web2 {
+    color:red;
+    font-size: xxx-large;
+}
+
+.line4 {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-color:red;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.join {
+    text-decoration: none;
+    color: white;
+}
+
+.bg {
+    width: 220px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
+.login{
+    padding: 60px;
+    text-decoration: none;
+    background-color: white;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color:red;
+    font-weight: bold;
+}
+
+.in1,.in2 {
+    background-color: black;
+    color: white;
+    text-decoration-style: none;
+    padding-left: 4px;
+    padding-top: 5px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid orangered;
+}
+.in1::placeholder{
+    color: white;
+}
+.in2::placeholder{
+    color: white;
+}
+.lo1{
+    padding:3px 80px;
+    background-color:red;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.do{
+    color: white;
+    padding: 0px 20px;
+    }
+.up{
+    color:red;
+    padding: 0px 70px;
+    }
+ .end{
+    color: white;
+    padding: 0px 60px;
+    }   
+    .insta,.you,.tw,.em,.wh{
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        padding-left: 10PX;
+    }
+    
