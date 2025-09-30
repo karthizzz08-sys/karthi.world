@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 57, 57);
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+.h3{
+    padding-left: 80PX;
+    color: white;
+}
+.line{
+    position: absolute;
+    left:170px ;
+    font-size: 20px;
+    color:rgb(210, 18, 18);
+}
+.child{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 500px;
+}
+.child1,.child2,.child3,.child4,.child5{
+color: white;
+text-decoration:none;
+}
+.me{
+    padding-right: 280px;
+    color: white;
+    text-decoration: none  ;
+}
